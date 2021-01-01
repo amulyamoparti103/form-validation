@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="decsription" content="html and java script">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="keywords" content="html,java script">
+		<title>java script form validation</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/form_validation.css">
+		<script src="assets/js/form_validation.js"></script>
+	</head>
+	<body>
+		<form id="frm" name="frm" method="Post">
+			<h1 style="padding-left: 65px;"><u>Registration Form</u></h1>
+
+			<div class="inp_lab name">
+				<label class="lab">Name : </label>
+				<input type="text" name="name" id="name" placeholder="enter your name">
+				<p id="nameErr"> </p>
+			</div><br>
+
+			<div class="inp_lab age">
+				<label class="lab">Age : </label>
+				<select name="age" id="age">
+					<option>select</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+				  	<option value="22">22</option>
+				  	<option value="23">23</option>
+				  	<option value="24">24</option>
+			  		<option value="25">25</option>
+				  	<option value="26">26</option>
+				</select>
+				<p id="ageErr"> </p>
+			</div><br>
+
+			<div class="inp_lab gender">
+				<label class="lab">Gender : </label>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<p id="genderErr"> </p>
+			</div><br>
+
+			<div class="inp_lab email">
+				<label class="lab">EmailId : </label>
+				<input type="Email" name="email" id="email" placeholder="enter your mail id">
+				<p id="emailErr"> </p>
+			</div><br>
+
+			<div class="inp_lab phn">
+				<label class="lab">Phone Number : </label>
+				<input type="text" id="phn" name="mobile" placeholder="Enetr your mobile number">
+				<p id="mobileErr"> </p>
+			<div>
+		</form>
+		<br>
+		<button id="entry" onclick="displayDetails()">Submit</button>
+	</body>
+</html>
